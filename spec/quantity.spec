@@ -164,7 +164,7 @@ describe Quantity do
       end
     
       it "does not add items of different types" do
-        lambda { 12.meters + 24.picograms }.should raise_error TypeError
+        lambda { 12.meters + 24.picograms }.should raise_error ArgumentError
       end
    
       it "adds negative quantities" do
@@ -180,7 +180,7 @@ describe Quantity do
       end
 
       it "does not add items of different types" do
-        lambda { (12.meters - 3650.picograms)}.should raise_error TypeError
+        lambda { (12.meters - 3650.picograms)}.should raise_error ArgumentError
       end
       
       it "subtracts numerics from quantities" do
@@ -203,7 +203,7 @@ describe Quantity do
       end
       
       it "uses the unit on the right when multiplying across the same dimension" do
-        (1.meter * 1.foot).unit.name.should == :'foot^2'
+        (1.meter * 1.foot).unit.name.should == 'foot^2'
       end
       
       it "multiplies complex units" do
@@ -233,7 +233,7 @@ describe Quantity do
       end
 
       it "divides quantities of different dimensions" do
-        (1.kilogram / 1.second).unit.name.should == :'kilogram/second'
+        (1.kilogram / 1.second).unit.name.should == 'kilogram/second'
       end
 
       it "correctly calculates the value of a divided unit" do
