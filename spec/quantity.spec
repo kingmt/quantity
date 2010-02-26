@@ -64,7 +64,12 @@ describe Quantity do
     it "reduces derived units" do
       ((1.meter / 1.second) * 1.second).should == 1.meter
     end
-  
+
+    it "converts volume between metric and US" do
+      1.gallon.should be_close 3.785.liters.to_gallons, 10**-3
+      3.785.liters.should be_close 1.gallons.to_liters, 10**-3
+    end
+
   end
 
   context "math operations" do
