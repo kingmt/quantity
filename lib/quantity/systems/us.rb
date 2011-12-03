@@ -12,8 +12,9 @@ class Quantity::Unit
   add_unit :ounce, :mass, 28349.5231, :ounces, :oz
   add_unit :ton, :mass, 907184740, :tons
 
-  add_unit :fluid_ounce, :volume, 29.57, :floz, :ozfl
-  add_unit :pint, :volume, 473.18, :pint, :pints
-  add_unit :quart, :volume, 946.35, :qt, :quarts
-  add_unit :gallon, :volume, 3785.41, :gallons, :gal
+  add_unit :fluid_ounce, :volume, 29573.5296, :fluid_ounces, :floz, :ozfl
+  add_unit :cup, :volume, 236588.2, :cups, :c
+  add_unit :pint, :volume, 473176.5, :pint, :pints
+  add_unit :quart, :volume, 946352.9, :qt, :quarts
+  add_unit :gallon, :volume, 3785412, :gallons, :gal
 end

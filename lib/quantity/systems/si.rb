@@ -31,24 +31,24 @@ class Quantity
 
   prefixes['yotta'] = 10 ** 27
   prefixes['zetta'] = 10 ** 24
-  prefixes['exa'] = 10 ** 21
-  prefixes['peta'] = 10 ** 18
-  prefixes['tera'] = 10 ** 15
-  prefixes['giga'] = 10 ** 12
-  prefixes['mega'] = 10 ** 9
-  prefixes['kilo'] = 10 ** 6
+  prefixes['exa']   = 10 ** 21
+  prefixes['peta']  = 10 ** 18
+  prefixes['tera']  = 10 ** 15
+  prefixes['giga']  = 10 ** 12
+  prefixes['mega']  = 10 ** 9
+  prefixes['kilo']  = 10 ** 6
   prefixes['hecto'] = 10 ** 5
-  prefixes['deca'] = 10 ** 4
-  prefixes[''] = 10 ** 3
-  prefixes['deci'] = 10 ** 2
+  prefixes['deca']  = 10 ** 4
+  prefixes['']      = 10 ** 3
+  prefixes['deci']  = 10 ** 2
   prefixes['centi'] = 10
   # milli is the reference point for SI-measured units
   prefixes['milli'] = 1
   prefixes['micro'] = 10 ** -3
-  prefixes['nano'] = 10 ** -6
-  prefixes['pico'] = 10 ** -9
+  prefixes['nano']  = 10 ** -6
+  prefixes['pico']  = 10 ** -9
   prefixes['femto'] = 10 ** -12
-  prefixes['atto'] = 10 ** -15
+  prefixes['atto']  = 10 ** -15
   prefixes['zepto'] = 10 ** -18
   prefixes['yocto'] = 10 ** -21
 
@@ -61,11 +61,11 @@ class Quantity
   units['mole']     = :substance
   # liter is a special cased, handled separately below
 
-  aliases['ampere'] = ['amp', 'amps', 'A']
-  aliases['liter'] = ['litre', 'litres']
+  aliases['ampere']  = ['amp', 'amps', 'A']
+  aliases['liter']   = ['litre', 'litres']
   aliases['candela'] = ['cd']
-  aliases['mole'] = ['mol']
-  aliases['kelvin'] = ['K']
+  aliases['mole']    = ['mol']
+  aliases['kelvin']  = ['K']
 
   units.each do | unit, dimension |
     prefixes.each do | prefix, value |
